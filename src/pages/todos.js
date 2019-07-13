@@ -7,6 +7,12 @@ const Todos = () => {
 		<Layout>
 			<SEO title="Todos" keywords={[`gatsby`, `application`, `react`]} />
 			<h1>Todos</h1>
+			<ul>
+				<li style={{ textDecoration: "line-through" }}>Add Responsive</li>
+				<li style={{ textDecoration: "line-through" }}>Add Docs</li>
+				<li>Update Tests</li>
+				<li>Add More Theme</li>
+			</ul>
 		</Layout>
 	)
 }

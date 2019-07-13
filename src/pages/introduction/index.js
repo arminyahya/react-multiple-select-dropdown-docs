@@ -3,15 +3,27 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import Code from "../examples/components/code"
 import "../../index.sass"
+import { FlexRow } from "../../components/styled"
 const md = `
 type ValueLabel  = {
-  value: any;
-  label: string;
+	value: any;
+	label: string;
+}
+
+// or in typescript
+
+interface ValueLabel {
+	value: any;
+	label: string;
 }
 `
 const IntroductionPage = () => (
 	<Layout>
 		<SEO title="Introduction" keywords={[`gatsby`, `application`, `react`]} />
+		<FlexRow style={{ justifyContent: "center" }}>
+			<img src="./introduction-1.jpg" style={{ borderRadius: 10 }} />
+			<img src="./introduction-2.jpg" style={{ borderRadius: 10 }} />
+		</FlexRow>
 		<h1>Introduction</h1>
 		<p>
 			MultipleSelectDropDown is a component which you can use in your forms
