@@ -10,7 +10,6 @@ const MenuPage = () => (
 	>
 		<div
 			style={{
-				listStyle: NamedNodeMap,
 				display: "flex",
 				justifyContent: "space-evenly",
 				flexDirection: "column",

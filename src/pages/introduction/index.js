@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import Code from "../examples/components/code"
+import Code from "../../components/code"
 import "../../index.sass"
 import { FlexRow } from "../../components/styled"
 const md = `

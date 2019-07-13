@@ -1,5 +1,5 @@
 import React from "react"
-import Example from "./components/example";
+import Example from "../../components/example";
 import {FlexRow} from '../../components/styled';
 const damd = `
 const DarkMultipleSelect = props => (

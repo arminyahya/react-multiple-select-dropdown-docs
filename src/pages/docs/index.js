@@ -2,10 +2,10 @@ import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import "../../index.sass"
-import { SectionHeader,SectionInner } from "./Components/styled"
-import Type from './Components/type';
-import Required from './Components/required';
-import DefaultValue from './Components/defaultvalue';
+import { SectionHeader,SectionInner } from "../../Components/styled"
+import Type from '../../Components/type';
+import Required from '../../Components/required';
+import DefaultValue from '../../Components/defaultvalue';
 
 /*
 popperClassName?: string;
