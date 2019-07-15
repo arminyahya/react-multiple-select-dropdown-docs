@@ -5,7 +5,7 @@ import "../../index.sass"
 import { SectionHeader,SectionInner } from "../../Components/styled"
 import Type from '../../Components/type';
 import Required from '../../Components/required';
-import StyledDefaultValue from '../../Components/StyledDefaultValue';
+import StyledDefaultValue from '../../components/styledDefaultValue';
 
 /*
 popperClassName?: string;
