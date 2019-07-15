@@ -5,7 +5,7 @@ import "../../index.sass"
 import { SectionHeader,SectionInner } from "../../Components/styled"
 import Type from '../../Components/type';
 import Required from '../../Components/required';
-import DefaultValue from '../../Components/defaultvalue';
+import StyledDefaultValue from '../../Components/StyledDefaultValue';
 
 /*
 popperClassName?: string;
@@ -35,7 +35,7 @@ const DocsPage = () => (
 		<SectionInner>
 			<Type>string</Type>
 			<Required>false</Required>
-			<DefaultValue>'multiple-select'</DefaultValue>
+			<StyledDefaultValue>'multiple-select'</StyledDefaultValue>
 			<p>prefix className for portal</p>
 		</SectionInner>
 		<SectionHeader>selectedItems</SectionHeader>
@@ -63,21 +63,21 @@ const DocsPage = () => (
 		<SectionInner>
 			<Type>string</Type>
 			<Required>false</Required>
-			<DefaultValue>'selected'</DefaultValue>
+			<StyledDefaultValue>'selected'</StyledDefaultValue>
 			<p>label of selected tab in mobile</p>
 		</SectionInner>
 		<SectionHeader>unSelectedTabLabel</SectionHeader>
 		<SectionInner>
 			<Type>string</Type>
 			<Required>false</Required>
-			<DefaultValue>'unselected'</DefaultValue>
+			<StyledDefaultValue>'unselected'</StyledDefaultValue>
 			<p>label of unselected tab in mobile</p>
 		</SectionInner>
 		<SectionHeader>breackPoint</SectionHeader>
 		<SectionInner>
 			<Type>"575" | "768" | "991" | "1199"</Type>
 			<Required>false</Required>
-			<DefaultValue>991</DefaultValue>
+			<StyledDefaultValue>991</StyledDefaultValue>
 			<p>Pixel when breackPoint apply</p>
 		</SectionInner>
 		<SectionHeader>placement</SectionHeader>
@@ -100,7 +100,7 @@ const DocsPage = () => (
 		| 'left-start'
 		</Type>
 			<Required>false</Required>
-			<DefaultValue>'bottom-end'</DefaultValue>
+			<StyledDefaultValue>'bottom-end'</StyledDefaultValue>
 			<p>place of dropdown</p>
 		</SectionInner>
 		<SectionHeader>theme</SectionHeader>
@@ -111,7 +111,7 @@ const DocsPage = () => (
 		<SectionHeader>direction</SectionHeader>
 		<SectionInner>
 			<Type>'ltr' | 'rtl</Type>
-			<DefaultValue>ltr</DefaultValue>
+			<StyledDefaultValue>ltr</StyledDefaultValue>
 			<p>we have some styles for rtl direction too you can use them by this prop.</p>
 		</SectionInner>
 		<SectionHeader>renderSelectedItem</SectionHeader>
