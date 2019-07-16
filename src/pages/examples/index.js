@@ -7,7 +7,7 @@ import "../../index.sass";
 import Theming from './theming';
 import Search from './search';
 import Responsive from './responsive';
-import CustomeList from './customeList';
+import CustomeList from './customelist';
 
 const ExamplesPage = () => (
   <Layout>

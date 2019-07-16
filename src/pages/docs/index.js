@@ -2,32 +2,11 @@ import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import "../../index.sass"
-import { SectionHeader,SectionInner } from "../../Components/styled"
-import Type from '../../Components/type';
-import Required from '../../Components/required';
+import { SectionHeader,SectionInner } from "../../components/styled"
+import Type from '../../components/type';
+import Required from '../../components/styledRequired';
 import StyledDefaultValue from '../../components/styledDefaultValue';
 
-/*
-popperClassName?: string;
-	selectedItems: ValueLabelModel[];
-	unSelectedItems: ValueLabelModel[];
-	onInputChange: (val: string) => void;
-	onChange: (selectedItems: ValueLabelModel[]) => void;
-	onFocus?: () => void;
-	onBlur?: () => void;
-	isRequired?: boolean;
-	addable?: boolean;
-	addText?: string;
-	onAddNewItem?: () => void;
-	selectedTabLabel?: string;
-	unselectedTabLabel?: string;
-	breackPoint?: "575" | "768" | "991" | "1199";
-	placement?: PopperJS.Placement;
-	theme?: "default" | "dark";
-	direction?: "rtl" | "ltr";
-	renderUnSelectedItem?: (item: ValueLabelModel) => React.ReactNode;
-	renderSelectedItem?: (item: ValueLabelModel) => React.ReactNode;
-	*/
 const DocsPage = () => (
 	<Layout>
 		<SEO title="Docs" keywords={[`gatsby`, `application`, `react`]} />
