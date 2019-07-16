@@ -1,5 +1,6 @@
 import React from "react"
 import Example from "../../components/example"
+import responsiveGif from '../../images/responsive.gif';
 
 const md = `
 const ResponsiveMultipleSelect = props => (
@@ -15,7 +16,7 @@ const Responsive = () => {
 		<div className="example-responsive">
 			<h1>Responsive</h1>
 			<div>
-				<img src="/static/img/responsive.gif" style={{ borderRadius: 10 }} />
+				<img src={responsiveGif} style={{ borderRadius: 10 }} />
 			</div>
 			<Example
 				code={md}

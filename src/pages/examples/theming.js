@@ -1,6 +1,9 @@
 import React from "react"
 import Example from "../../components/example";
 import {FlexRow} from '../../components/styled';
+import defaulttheme from '../../images/default-theme.jpg';
+import darktheme from '../../images/dark-theme.jpg';
+
 const damd = `
 const DarkMultipleSelect = props => (
 	<MultipleSelect
@@ -32,14 +35,14 @@ const Theming = () => {
 				<h2>Dark</h2>
 				<FlexRow>
 					<Example code={damd} />
-					<img src="/static/img/default-theme.jpg" />
+					<img src={defaulttheme} />
 				</FlexRow>
 			</div>
 			<div className="theming-default">
 				<h2>Default</h2>
 				<FlexRow>
 					<Example code={demd} />
-					<img src="/static/img/dark-theme.jpg" />
+					<img src={darktheme} />
 				</FlexRow>
 			</div>
 		</div>

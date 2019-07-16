@@ -4,6 +4,9 @@ import SEO from "../../components/seo"
 import Code from "../../components/code"
 import "../../index.sass"
 import { FlexRow } from "../../components/styled"
+import introduction1 from '../../images/introduction-1.jpg';
+import introduction2 from '../../images/introduction-2.jpg';
+
 const md = `
 type ValueLabel  = {
 	value: any;
@@ -21,8 +24,8 @@ const IntroductionPage = () => (
 	<Layout>
 		<SEO title="Introduction" keywords={[`gatsby`, `application`, `react`]} />
 		<FlexRow style={{ justifyContent: "center" }}>
-			<img src="/static/img/introduction-1.jpg" style={{ borderRadius: 10 }} />
-			<img src="/static/img/introduction-2.jpg" style={{ borderRadius: 10 }} />
+			<img src={introduction1} style={{ borderRadius: 10 }} />
+			<img src={introduction2} style={{ borderRadius: 10 }} />
 		</FlexRow>
 		<h1>Introduction</h1>
 		<p>
