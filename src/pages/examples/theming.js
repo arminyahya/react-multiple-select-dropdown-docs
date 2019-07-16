@@ -1,8 +1,8 @@
 import React from "react"
 import Example from "../../components/example";
 import {FlexRow} from '../../components/styled';
-import defaulttheme from '../../images/default-theme.jpg';
-import darktheme from '../../images/dark-theme.jpg';
+import defaulttheme from '../../images/default-theme.JPG';
+import darktheme from '../../images/dark-theme.JPG';
 
 const damd = `
 const DarkMultipleSelect = props => (

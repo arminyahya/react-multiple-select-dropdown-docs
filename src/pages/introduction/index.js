@@ -4,8 +4,8 @@ import SEO from "../../components/seo"
 import Code from "../../components/code"
 import "../../index.sass"
 import { FlexRow } from "../../components/styled"
-import introduction1 from '../../images/introduction-1.jpg';
-import introduction2 from '../../images/introduction-2.jpg';
+import introduction1 from '../../images/introduction-1.JPG';
+import introduction2 from '../../images/introduction-2.JPG';
 
 const md = `
 type ValueLabel  = {
