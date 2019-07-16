@@ -15,7 +15,7 @@ const Responsive = () => {
 		<div className="example-responsive">
 			<h1>Responsive</h1>
 			<div>
-				<img src="/img/responsive.gif" style={{ borderRadius: 10 }} />
+				<img src="/static/img/responsive.gif" style={{ borderRadius: 10 }} />
 			</div>
 			<Example
 				code={md}

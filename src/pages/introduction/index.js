@@ -21,8 +21,8 @@ const IntroductionPage = () => (
 	<Layout>
 		<SEO title="Introduction" keywords={[`gatsby`, `application`, `react`]} />
 		<FlexRow style={{ justifyContent: "center" }}>
-			<img src="/img/introduction-1.jpg" style={{ borderRadius: 10 }} />
-			<img src="/img/introduction-2.jpg" style={{ borderRadius: 10 }} />
+			<img src="/static/img/introduction-1.jpg" style={{ borderRadius: 10 }} />
+			<img src="/static/img/introduction-2.jpg" style={{ borderRadius: 10 }} />
 		</FlexRow>
 		<h1>Introduction</h1>
 		<p>

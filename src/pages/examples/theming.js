@@ -32,14 +32,14 @@ const Theming = () => {
 				<h2>Dark</h2>
 				<FlexRow>
 					<Example code={damd} />
-					<img src="/img/default-theme.jpg" />
+					<img src="/static/img/default-theme.jpg" />
 				</FlexRow>
 			</div>
 			<div className="theming-default">
 				<h2>Default</h2>
 				<FlexRow>
 					<Example code={demd} />
-					<img src="/img/dark-theme.jpg" />
+					<img src="/static/img/dark-theme.jpg" />
 				</FlexRow>
 			</div>
 		</div>
