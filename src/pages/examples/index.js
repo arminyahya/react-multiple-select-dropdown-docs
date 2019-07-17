@@ -11,7 +11,7 @@ import CustomeList from './customelist';
 
 const ExamplesPage = () => (
   <Layout>
-    <SEO title="Examples" keywords={[`gatsby`, `application`, `react`]} />
+			<SEO title="Examples" keywords={[`react-multiple-select`, `react-multiple-select-dropdown`, `react multiselect`, `react multiple select`, 'react multiple select dropdown']} />
     <Theming />
     <Search />
     <Responsive />

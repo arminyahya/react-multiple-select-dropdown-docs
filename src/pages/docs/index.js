@@ -9,7 +9,7 @@ import StyledDefaultValue from '../../components/styledDefaultValue';
 
 const DocsPage = () => (
 	<Layout>
-		<SEO title="Docs" keywords={[`gatsby`, `application`, `react`]} />
+		<SEO title="Docs" keywords={[`react-multiple-select`, `react-multiple-select-dropdown`, `react multiselect`, `react multiple select`, 'react multiple select dropdown']} />
 		<SectionHeader>prefixClassName</SectionHeader>
 		<SectionInner>
 			<Type>string</Type>

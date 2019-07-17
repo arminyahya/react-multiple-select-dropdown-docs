@@ -20,7 +20,7 @@ interface ValueLabel {
 `
 const IntroductionPage = () => (
 	<Layout>
-		<SEO title="Introduction" keywords={[`gatsby`, `application`, `react`]} />
+			<SEO title="Introduction" keywords={[`react-multiple-select`, `react-multiple-select-dropdown`, `react multiselect`, `react multiple select`, 'react multiple select dropdown']} />
 		<FlexRow style={{ justifyContent: "center" }}>
 			<img src={'https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/introduction-1.JPG?raw=true'} style={{ borderRadius: 10 }} />
 			<img src={'https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/introduction-2.JPG?raw=true'} style={{ borderRadius: 10 }} />
