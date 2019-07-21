@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import GitHubIcon from "../components/githubIcon"
+import GitHubIcon from "../components/gitHubIcon"
 
 const Header = ({ siteTitle }) => (
 	<header

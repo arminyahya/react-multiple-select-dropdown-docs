@@ -13,7 +13,6 @@ import Header from "./header"
 import "./layout.css"
 import Menu from "../components/menu"
 const Layout = props => {
-  console.log(props)
   return (
     <StaticQuery
       query={graphql`

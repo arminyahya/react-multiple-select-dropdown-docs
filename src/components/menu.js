@@ -2,7 +2,6 @@ import * as React from "react"
 import Link from "gatsby-link"
 
 const MenuPage = ({ currentScreen }) => {
-	console.log(currentScreen);
 	return (
 		<div
 			style={{
@@ -20,16 +19,42 @@ const MenuPage = ({ currentScreen }) => {
 				className="side-menu"
 			>
 				<div>
-					<Link to="/introduction" style={{fontWeight: currentScreen === 'introduction' ? 'bold' : 'normal'}}>Introduction</Link>
+					<Link
+						to="/introduction"
+						style={{
+							fontWeight: currentScreen === "introduction" ? "bold" : "normal",
+						}}
+					>
+						Introduction
+					</Link>
 				</div>
 				<div>
-					<Link to="/docs" style={{fontWeight: currentScreen === 'docs' ? 'bold' : 'normal'}}>Docs</Link>
+					<Link
+						to="/docs"
+						style={{ fontWeight: currentScreen === "docs" ? "bold" : "normal" }}
+					>
+						Docs
+					</Link>
 				</div>
 				<div>
-					<Link to="/examples" style={{fontWeight: currentScreen === 'examples' ? 'bold' : 'normal'}}>Examples</Link>
+					<Link
+						to="/examples"
+						style={{
+							fontWeight: currentScreen === "examples" ? "bold" : "normal",
+						}}
+					>
+						Examples
+					</Link>
 				</div>
 				<div>
-					<Link to="/todos" style={{fontWeight: currentScreen === 'todos' ? 'bold' : 'normal'}}>Todos</Link>
+					<Link
+						to="/todos"
+						style={{
+							fontWeight: currentScreen === "todos" ? "bold" : "normal",
+						}}
+					>
+						Todos
+					</Link>
 				</div>
 			</div>
 		</div>
