@@ -2,9 +2,9 @@ import * as React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Todos = () => {
+const Todos = (props) => {
 	return (
-		<Layout>
+		<Layout currentScreen={props["*"]}>
 			<SEO title="Todos" keywords={[`react-multiple-select`, `react-multiple-select-dropdown`, `react multiselect`, `react multiple select`, 'react multiple select dropdown']} />
 			<h1>Todos</h1>
 			<ul>

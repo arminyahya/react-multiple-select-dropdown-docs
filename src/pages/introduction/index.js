@@ -18,37 +18,59 @@ interface ValueLabel {
 	label: string;
 }
 `
-const IntroductionPage = () => (
-	<Layout>
-			<SEO title="Introduction" keywords={[`react-multiple-select`, `react-multiple-select-dropdown`, `react multiselect`, `react multiple select`, 'react multiple select dropdown']} />
-		<FlexRow style={{ justifyContent: "center" }}>
-			<img src={'https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/introduction-1.JPG?raw=true'} style={{ borderRadius: 10 }} />
-			<img src={'https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/introduction-2.JPG?raw=true'} style={{ borderRadius: 10 }} />
-		</FlexRow>
-		<h1>Introduction</h1>
-		<p>
-			MultipleSelectDropDown is a component which you can use in your forms
-			where you need to pick more than one item.
-		</p>
-		<p>
-			for example you want to add some users to a group or pick multiple tags
-			for your article.
-		</p>
-		<p>its responsive too,its use popper and react-responsive librery</p>
-		<p>
-			it will be transform to a smaller component when you resize or change his
-			position when there is no space in placement
-		</p>
-		<h4>ValueLabelModel</h4>
-		<p>
-			my model to keep data in option is ValueLabel. an object with value and
-			label as properties.
-			<br />
-			use <b>value</b> to keep properties like Id and use <b>label</b> to keep
-			field you want to display like username
-		</p>
-		<Code>{md}</Code>
-	</Layout>
-)
+const IntroductionPage = props => {
+	return (
+		<Layout currentScreen={props["*"]}>
+			<SEO
+				title="Introduction"
+				keywords={[
+					`react-multiple-select`,
+					`react-multiple-select-dropdown`,
+					`react multiselect`,
+					`react multiple select`,
+					"react multiple select dropdown",
+				]}
+			/>
+			<FlexRow style={{ justifyContent: "center" }}>
+				<img
+					src={
+						"https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/introduction-1.JPG?raw=true"
+					}
+					style={{ borderRadius: 10 }}
+				/>
+				<img
+					src={
+						"https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/introduction-2.JPG?raw=true"
+					}
+					style={{ borderRadius: 10 }}
+				/>
+			</FlexRow>
+			<h1>Introduction</h1>
+			<p>
+				MultipleSelectDropDown is a component which you can use in your forms
+				where you need to pick more than one item.
+			</p>
+			<p>
+				for example you want to add some users to a group or pick multiple tags
+				for your article.
+			</p>
+			<p>its responsive too,its use popper and react-responsive librery</p>
+			<p>
+				it will be transform to a smaller component when you resize or change
+				his position when there is no space in placement
+			</p>
+			<pre>npm install --save react-multiple-select-dropdown</pre>
+			<h4>ValueLabelModel</h4>
+			<p>
+				my model to keep data in option is ValueLabel. an object with value and
+				label as properties.
+				<br />
+				use <b>value</b> to keep properties like Id and use <b>label</b> to keep
+				field you want to display like username
+			</p>
+			<Code>{md}</Code>
+		</Layout>
+	)
+}
 
 export default IntroductionPage

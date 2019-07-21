@@ -7,9 +7,9 @@ import Type from '../../components/type';
 import Required from '../../components/styledRequired';
 import StyledDefaultValue from '../../components/styledDefaultValue';
 
-const DocsPage = () => (
-	<Layout>
-		<SEO title="Docs" keywords={[`react-multiple-select`, `react-multiple-select-dropdown`, `react multiselect`, `react multiple select`, 'react multiple select dropdown']} />
+const DocsPage = (props) => (
+	<Layout currentScreen={props["*"]}>
+	<SEO title="Docs" keywords={[`react-multiple-select`, `react-multiple-select-dropdown`, `react multiselect`, `react multiple select`, 'react multiple select dropdown']} />
 		<SectionHeader>prefixClassName</SectionHeader>
 		<SectionInner>
 			<Type>string</Type>
