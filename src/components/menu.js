@@ -2,6 +2,7 @@ import * as React from "react"
 import Link from "gatsby-link"
 
 const MenuPage = ({ currentScreen }) => {
+	console.log(currentScreen)
 	return (
 		<div
 			style={{
@@ -25,7 +26,7 @@ const MenuPage = ({ currentScreen }) => {
 							fontWeight: currentScreen === "introduction" ? "bold" : "normal",
 						}}
 					>
-						Introduction
+						Installation
 					</Link>
 				</div>
 				<div>
@@ -33,7 +34,7 @@ const MenuPage = ({ currentScreen }) => {
 						to="/docs"
 						style={{ fontWeight: currentScreen === "docs" ? "bold" : "normal" }}
 					>
-						Docs
+						Props
 					</Link>
 				</div>
 				<div>

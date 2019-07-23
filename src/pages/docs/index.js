@@ -10,51 +10,50 @@ import StyledDefaultValue from '../../components/styledDefaultValue';
 const DocsPage = (props) => (
 	<Layout currentScreen={props["*"]}>
 	<SEO title="Docs" keywords={[`react-multiple-select`, `react-multiple-select-dropdown`, `react multiselect`, `react multiple select`, 'react multiple select dropdown']} />
-		<SectionHeader>prefixClassName</SectionHeader>
+		<SectionHeader>popperClassName</SectionHeader>
 		<SectionInner>
 			<Type>string</Type>
 			<Required>false</Required>
-			<StyledDefaultValue>'multiple-select'</StyledDefaultValue>
-			<p>prefix className for portal</p>
+			<p>Prefix className for portal</p>
 		</SectionInner>
 		<SectionHeader>selectedItems</SectionHeader>
 		<SectionInner>
 			<Type>array of ValueLabelModel</Type>
-			<p>options which are selected</p>
+			<p>Options which are selected</p>
 		</SectionInner>
 		<SectionHeader>unSelectedItems</SectionHeader>
 		<SectionInner>
 			<Type>array of ValueLabelModel</Type>
-			<p>all options</p>
+			<p>All options</p>
 		</SectionInner>
 		<SectionHeader>onInputChange</SectionHeader>
 
 		<SectionInner>
 			<Type>(text: string) => void</Type>
-			<p>call back when you type something in input.</p>
+			<p>Call back when you type something in input.</p>
 		</SectionInner>
 		<SectionHeader>onChange</SectionHeader>
 		<SectionInner>
 			<Type>(selectedItems: ValueLabelModel[]) => void</Type>
-			<p>call back when select an item, return an array of new selectedItems.</p>
+			<p>Call back when select an item, return an array of new selectedItems.</p>
 		</SectionInner>
 		<SectionHeader>selectedTabLabel</SectionHeader>
 		<SectionInner>
 			<Type>string</Type>
 			<Required>false</Required>
 			<StyledDefaultValue>'selected'</StyledDefaultValue>
-			<p>label of selected tab in mobile</p>
+			<p>Label of selected tab in mobile</p>
 		</SectionInner>
 		<SectionHeader>unSelectedTabLabel</SectionHeader>
 		<SectionInner>
 			<Type>string</Type>
 			<Required>false</Required>
 			<StyledDefaultValue>'unselected'</StyledDefaultValue>
-			<p>label of unselected tab in mobile</p>
+			<p>Label of unselected tab in mobile</p>
 		</SectionInner>
 		<SectionHeader>breackPoint</SectionHeader>
 		<SectionInner>
-			<Type>"575" | "768" | "991" | "1199"</Type>
+			<Type>'575' | '768' | '991' | '1199'</Type>
 			<Required>false</Required>
 			<StyledDefaultValue>991</StyledDefaultValue>
 			<p>Pixel when breackPoint apply</p>
@@ -80,38 +79,38 @@ const DocsPage = (props) => (
 		</Type>
 			<Required>false</Required>
 			<StyledDefaultValue>'bottom-end'</StyledDefaultValue>
-			<p>place of dropdown</p>
+			<p>Place of dropdown</p>
 		</SectionInner>
 		<SectionHeader>theme</SectionHeader>
 		<SectionInner>
-			<Type>'default' | 'dark</Type>
-			<p>we have a dark theme too but you can write your styles too.</p>
+			<Type>'default' | 'dark'</Type>
+			<p>We have a dark theme too but you can write your styles too.</p>
 		</SectionInner>
 		<SectionHeader>direction</SectionHeader>
 		<SectionInner>
-			<Type>'ltr' | 'rtl</Type>
+			<Type>'ltr' | 'rtl'</Type>
 			<StyledDefaultValue>ltr</StyledDefaultValue>
-			<p>we have some styles for rtl direction too you can use them by this prop.</p>
+			<p>We have some styles for rtl direction too you can use them by this prop.</p>
 		</SectionInner>
 		<SectionHeader>renderSelectedItem</SectionHeader>
 		<SectionInner>
 			<Type>(item: ValueLabelModel) => React.ReactNode</Type>
-			<p>we pass item througth this function so you can render it whatever you want.</p>
+			<p>We pass item througth this function so you can render it whatever you want.</p>
 		</SectionInner>
 		<SectionHeader>renderUnSelectedItem</SectionHeader>
 		<SectionInner>
 			<Type>(item: ValueLabelModel) => React.ReactNode</Type>
-			<p>we pass item througth this function so you can render it whatever you want.</p>
+			<p>We pass item througth this function so you can render it whatever you want.</p>
 		</SectionInner>
 		<SectionHeader>onFocus</SectionHeader>
 		<SectionInner>
 			<Type>() => void</Type>
-			<p>call back after focus.</p>
+			<p>Call back after focus.</p>
 		</SectionInner>
 		<SectionHeader>onBlur</SectionHeader>	
 		<SectionInner>
 			<Type>() => void</Type>
-			<p>call back after blur.</p>
+			<p>Call back after blur.</p>
 		</SectionInner>
 	</Layout>
 )
