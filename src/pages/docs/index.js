@@ -16,12 +16,12 @@ const DocsPage = (props) => (
 			<Required>false</Required>
 			<p>Prefix className for portal</p>
 		</SectionInner>
-		<SectionHeader>selectedItems</SectionHeader>
+		<SectionHeader>selectedOptions</SectionHeader>
 		<SectionInner>
 			<Type>array of ValueLabelModel</Type>
 			<p>Options which are selected</p>
 		</SectionInner>
-		<SectionHeader>unSelectedItems</SectionHeader>
+		<SectionHeader>options</SectionHeader>
 		<SectionInner>
 			<Type>array of ValueLabelModel</Type>
 			<p>All options</p>
