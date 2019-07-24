@@ -18,12 +18,12 @@ const DocsPage = (props) => (
 		</SectionInner>
 		<SectionHeader>selectedOptions</SectionHeader>
 		<SectionInner>
-			<Type>array of ValueLabelModel</Type>
+			<Type>ValueLabelModel[]</Type>
 			<p>Options which are selected</p>
 		</SectionInner>
 		<SectionHeader>options</SectionHeader>
 		<SectionInner>
-			<Type>array of ValueLabelModel</Type>
+			<Type>ValueLabelModel[]</Type>
 			<p>All options</p>
 		</SectionInner>
 		<SectionHeader>onInputChange</SectionHeader>
@@ -34,8 +34,8 @@ const DocsPage = (props) => (
 		</SectionInner>
 		<SectionHeader>onChange</SectionHeader>
 		<SectionInner>
-			<Type>(selectedItems: ValueLabelModel[]) => void</Type>
-			<p>Call back when select an item, return an array of new selectedItems.</p>
+			<Type>(selectedOptions: ValueLabelModel[]) => void</Type>
+			<p>Call back when select an item, return an array of new selectedOptions.</p>
 		</SectionInner>
 		<SectionHeader>selectedTabLabel</SectionHeader>
 		<SectionInner>
@@ -94,23 +94,23 @@ const DocsPage = (props) => (
 		</SectionInner>
 		<SectionHeader>renderSelectedItem</SectionHeader>
 		<SectionInner>
-			<Type>(item: ValueLabelModel) => React.ReactNode</Type>
-			<p>We pass item througth this function so you can render it whatever you want.</p>
+			<Type>(option: ValueLabelModel) => React.ReactNode</Type>
+			<p>We pass option througth this function so you can render it whatever you want.</p>
 		</SectionInner>
-		<SectionHeader>renderUnSelectedItem</SectionHeader>
+		<SectionHeader>renderUnSelectedOption</SectionHeader>
 		<SectionInner>
-			<Type>(item: ValueLabelModel) => React.ReactNode</Type>
-			<p>We pass item througth this function so you can render it whatever you want.</p>
+			<Type>(option: ValueLabelModel) => React.ReactNode</Type>
+			<p>We pass unSelectedOption througth this function so you can render it whatever you want.</p>
 		</SectionInner>
 		<SectionHeader>onFocus</SectionHeader>
 		<SectionInner>
 			<Type>() => void</Type>
-			<p>Call back after focus.</p>
+			<p>Call back after input focus.</p>
 		</SectionInner>
 		<SectionHeader>onBlur</SectionHeader>	
 		<SectionInner>
 			<Type>() => void</Type>
-			<p>Call back after blur.</p>
+			<p>Call back after input blur.</p>
 		</SectionInner>
 	</Layout>
 )

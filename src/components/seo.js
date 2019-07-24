@@ -81,7 +81,7 @@ function SEO({ description, lang, meta, keywords, title }) {
 				{
 					rel: "shortcut icon",
 					type: "image/png",
-					href: `/icons/open-book.png`,
+					href: "https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/open-book.png?raw=true",
 				},
 			]}
 		/>

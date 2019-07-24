@@ -5,57 +5,9 @@ import Code from "../../components/code"
 import "../../index.sass"
 import { FlexRow } from "../../components/styled"
 
-const md = `
-type ValueLabel  = {
-	value: any;
-	label: string;
-}
+import { gettingStarted_md, valueLabel_md } from '../../mds';
 
-// or 
-
-interface ValueLabel {
-	value: any;
-	label: string;
-}
-`
-
-const gettingStartedMd = `
-
-import React, { Component } from 'react'
-import MultipleSelect from 'react-multiple-select-dropdown';
-
-class YourWrapperComponent extends Component {
-	state = {
-		selectedOptions: [],
-	Options: [
-	{ value: 1, label: 'react' },
-	{ value: 2, label: 'reactnative' },
-	{ value: 3, label: 'nodejs' },
-	{ value: 4, label: 'redux' },
-	{ value: 5, label: 'mobx' }
-	]
-	}
-
-onChange = (selectedOptions) => {
-	this.setState({ selectedOptions: selectedOptions });
-
-
-render() {
-const { selectedItems, unSelectedItems } = this.state;
-	return (
-	<div>
-	<MultipleSelect
-		selectedOptions={selectedItems}
-		Options={unSelectedItems}
-		onChange={this.onChange}
-	/>
-	</div>
-);
-
-}
-`
 const IntroductionPage = props => {
-	console.log(props)
 	return (
 		<Layout currentScreen={props["*"]}>
 			<SEO
@@ -108,7 +60,7 @@ const IntroductionPage = props => {
 			</p>
 			<pre>npm install --save react-multiple-select-dropdown</pre>
 
-			<Code>{gettingStartedMd} </Code>
+			<Code>{gettingStarted_md} </Code>
 
 			<h5 style={{ margin: "10px 0px" }}>ValueLabelModel</h5>
 			<p>
@@ -118,7 +70,7 @@ const IntroductionPage = props => {
 				use <b>value</b> to keep properties like id and use <b>label</b> to keep
 				field you want to display like username
 			</p>
-			<Code>{md}</Code>
+			<Code>{valueLabel_md}</Code>
 
 			<div className="introdoction-available-classes">
 				<h5 style={{ margin: "5px 0px" }}>

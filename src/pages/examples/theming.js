@@ -1,29 +1,7 @@
 import React from "react"
 import Example from "../../components/example";
 import {FlexRow} from '../../components/styled';
-
-const damd = `
-const DarkMultipleSelect = props => (
-	<MultipleSelect
-		selectedItems={selectedItems}
-		unSelectedItems={unSelectedItems}
-		onChange={this.onChange}
-		theme={'dark'}
-	/>
-)
-`
-
-const demd = `
-const DarkMultipleSelect = props => (
-return (
-	<MultipleSelect
-		selectedItems={selectedItems}
-		unSelectedItems={unSelectedItems}
-		onChange={this.onChange}
-		theme={'default'}
-	/>
-)
-`
+import { darkTheme_md, defaultTheme_md } from '../../mds';
 
 const Theming = () => {
 	return (
@@ -32,14 +10,14 @@ const Theming = () => {
 			<h1>Theming</h1>
 				<h2>Dark</h2>
 				<FlexRow>
-					<Example code={damd} />
+					<Example code={darkTheme_md} />
 					<img src={'https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/dark-theme.JPG?raw=true'} />
 				</FlexRow>
 			</div>
 			<div className="theming-default">
 				<h2>Default</h2>
 				<FlexRow>
-					<Example code={demd} />
+					<Example code={defaultTheme_md} />
 					<img src={'https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/default-theme.JPG?raw=true'} />
 				</FlexRow>
 			</div>
