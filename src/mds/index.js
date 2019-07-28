@@ -32,7 +32,7 @@ class YourWrapperComponent extends Component {
 
   onChange = (selectedOptions) => {
     this.setState({ selectedOptions: selectedOptions });
-
+  }
 
   render() {
   const { selectedItems, unSelectedItems } = this.state;
