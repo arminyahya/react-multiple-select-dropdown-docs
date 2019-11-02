@@ -19,12 +19,6 @@ const IntroductionPage = props => {
 					`react multi select`,
 					"react multiple select dropdown",
 				]}
-				meta={[
-					<meta
-						name="google-site-verification"
-						content="XTi52991nPvWRLWEz4O2-bpHLQ7VkclrGwQVQbFXUVs"
-					/>,
-				]}
 			/>
 			<FlexRow style={{ justifyContent: "center" }}>
 				<img
