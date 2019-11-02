@@ -5,7 +5,7 @@ import Code from "../../components/code"
 import "../../index.sass"
 import { FlexRow } from "../../components/styled"
 
-import { gettingStarted_md, valueLabel_md } from '../../mds';
+import { gettingStarted_md, valueLabel_md } from "../../mds"
 
 const IntroductionPage = props => {
 	return (
@@ -18,6 +18,12 @@ const IntroductionPage = props => {
 					`react multiselect`,
 					`react multi select`,
 					"react multiple select dropdown",
+				]}
+				meta={[
+					<meta
+						name="google-site-verification"
+						content="XTi52991nPvWRLWEz4O2-bpHLQ7VkclrGwQVQbFXUVs"
+					/>,
 				]}
 			/>
 			<FlexRow style={{ justifyContent: "center" }}>
