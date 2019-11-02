@@ -14,10 +14,10 @@ const ExamplesPage = props => (
 	<SEO
 			title="Examples"
 			keywords={[
-				`react-multiple-select`,
-				`react-multiple-select-dropdown`,
+				`react-multi-select`,
+				`react-multi-select-dropdown`,
 				`react multiselect`,
-				`react multiple select`,
+				`react multi select`,
 				"react multiple select dropdown",
 			]}
 		/>

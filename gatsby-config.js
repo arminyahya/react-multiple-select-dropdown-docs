@@ -7,6 +7,15 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,
+    `gatsby-plugin-playground`,
+      {
+        resolve: `gatsby-source-contentful`,
+        options: {
+          spaceId: "one0vzq65gze",
+          // Learn about environment variables: https://gatsby.dev/env-vars
+          accessToken: "9rXOJigUY3sge8Cj8X0zUPosu4cdTEHD2mg14QEICDw",
+        },
+      },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

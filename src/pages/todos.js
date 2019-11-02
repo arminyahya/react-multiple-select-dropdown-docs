@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 const Todos = (props) => {
 	return (
 		<Layout currentScreen={props["*"]}>
-			<SEO title="Todos" keywords={[`react-multiple-select`, `react-multiple-select-dropdown`, `react multiselect`, `react multiple select`, 'react multiple select dropdown']} />
+			<SEO title="Todos" keywords={[`react-multi-select`, `react-multi-select-dropdown`, `react multiselect`, `react multi select`, 'react multiple select dropdown']} />
 			<h1>Todos</h1>
 			<ul>
 				<li style={{ textDecoration: "line-through" }}>Add Responsive</li>
