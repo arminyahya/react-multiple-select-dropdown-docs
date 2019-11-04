@@ -21,7 +21,7 @@ import MultipleSelect from 'react-multiple-select-dropdown';
 class YourWrapperComponent extends Component {
   state = {
     selectedOptions: [],
-    Options: [
+    options: [
     { value: 1, label: 'react' },
     { value: 2, label: 'reactnative' },
     { value: 3, label: 'nodejs' },
@@ -35,12 +35,12 @@ class YourWrapperComponent extends Component {
   }
 
   render() {
-  const { selectedItems, unSelectedItems } = this.state;
+  const { selectedItems, options } = this.state;
   return (
     <div>
       <MultipleSelect
         selectedOptions={selectedItems}
-        Options={unSelectedItems}
+        options={options}
         onChange={this.onChange}
       />
     </div>
@@ -82,7 +82,7 @@ const ResponsiveMultipleSelect = props => (
 export const search_md = `
 
 class YourWrapperComponent extends Component {
-  options = 
+  initialOptions = 
   [
     { value: 1, label: 'react' },
     { value: 2, label: 'reactnative' },
@@ -92,13 +92,7 @@ class YourWrapperComponent extends Component {
   ];
   state = {
   selectedOptions: [],
-  options: [
-    { value: 1, label: 'react' },
-    { value: 2, label: 'reactnative' },
-    { value: 3, label: 'nodejs' },
-    { value: 4, label: 'redux' },
-    { value: 5, label: 'mobx' }
-    ]
+  options: [...initialOptions]
   }
   
   onChange = (selectedOptions) => {
