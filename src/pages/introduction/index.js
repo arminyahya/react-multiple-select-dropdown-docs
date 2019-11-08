@@ -26,12 +26,16 @@ const IntroductionPage = props => {
 						"https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/introduction-1.JPG?raw=true"
 					}
 					style={{ borderRadius: 10 }}
+					alt="multi select component"
+					title="multi select component"
 				/>
 				<img
 					src={
 						"https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/introduction-2.JPG?raw=true"
 					}
 					style={{ borderRadius: 10 }}
+					alt="responsive multi select component"
+					title="responsive multi select component"
 				/>
 			</FlexRow>
 			<h2>Installation and usage</h2>

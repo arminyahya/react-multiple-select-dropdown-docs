@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => (
 				padding: `1.45rem 1.0875rem`,
 			}}
 		>
-			<h4 style={{ margin: 0, flex: 1, display: 'flex', alignItems: 'center' }}>
+			<h1 style={{ margin: 0, flex: 1, display: 'flex', alignItems: 'center', fontSize: '20px' }}>
 				<Link
 					to="/"
 					style={{
@@ -25,7 +25,7 @@ const Header = ({ siteTitle }) => (
 				>
 					{siteTitle}
 				</Link>
-			</h4>
+			</h1>
 			<div style={{ marginInlineStart: "auto" }}>
 				<a href="https://github.com/arminyahya/react-multiple-select-dropdown/">
 					<GitHubIcon />
