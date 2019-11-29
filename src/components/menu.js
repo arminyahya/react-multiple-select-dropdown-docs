@@ -1,64 +1,68 @@
 import * as React from "react"
 import Link from "gatsby-link"
+import styled from 'styled-components';
 
+export const MenuWrap = styled.div`
+	background: #f4f4f4;
+	padding-top: 10px;
+`
+export const MenuInner = styled.div`
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	padding: 20px 10px;
+	min-width: 350px
+	
+	@media only screen and (max-width: 480px) {
+			min-width: 100px;
+			flex-direction: row;
+			top: 84px;
+	}
+ 
+`
+
+export const MenuItem = styled(Link)`
+	display: block;
+`
 const MenuPage = ({ currentScreen }) => {
-	console.log(currentScreen)
 	return (
-		<div
-			style={{
-				background: "#f4f4f4",
-				paddingTop: "10px",
-			}}
+		<MenuWrap
 		>
-			<div
-				style={{
-					display: "flex",
-					justifyContent: "space-evenly",
-					flexDirection: "column",
-					padding: "20px 10px",
-				}}
+			<MenuInner
 				className="side-menu"
 			>
-				<div>
-					<Link
+					<MenuItem
 						to="/introduction"
 						style={{
 							fontWeight: currentScreen === "introduction" ? "bold" : "normal",
 						}}
 					>
 						Installation
-					</Link>
-				</div>
-				<div>
-					<Link
+					</MenuItem>
+					<MenuItem
 						to="/docs"
 						style={{ fontWeight: currentScreen === "docs" ? "bold" : "normal" }}
 					>
 						Props
-					</Link>
-				</div>
-				<div>
-					<Link
+					</MenuItem>
+					<MenuItem
 						to="/examples"
 						style={{
 							fontWeight: currentScreen === "examples" ? "bold" : "normal",
 						}}
 					>
 						Examples
-					</Link>
-				</div>
-				<div>
-					<Link
+					</MenuItem>
+					<MenuItem
 						to="/todos"
 						style={{
 							fontWeight: currentScreen === "todos" ? "bold" : "normal",
 						}}
 					>
 						Todos
-					</Link>
-				</div>
-			</div>
-		</div>
+					</MenuItem>
+			</MenuInner>
+		</MenuWrap>
 	)
 }
 

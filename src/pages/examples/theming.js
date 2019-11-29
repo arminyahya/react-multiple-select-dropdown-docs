@@ -10,23 +10,23 @@ const Theming = () => {
 				<h1>Theming</h1>
 				<h2>Dark</h2>
 				<FlexRow>
-					<Example code={darkTheme_md} />
 					<img
 						src={'https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/dark-theme.JPG?raw=true'}
 						alt="dark multi select component"
 						title="dark multi select component"
 					/>
+					<Example code={darkTheme_md} />
 				</FlexRow>
 			</div>
 			<div className="theming-default">
 				<h2>Default</h2>
 				<FlexRow>
-					<Example code={defaultTheme_md} />
 					<img
 						src={'https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/default-theme.JPG?raw=true'}
 						alt="multi select component"
 						title="multi select component"
 					/>
+					<Example code={defaultTheme_md} />
 				</FlexRow>
 			</div>
 		</div>

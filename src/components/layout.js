@@ -1,17 +1,28 @@
-/**
- * Layout component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-
 import Header from "./header"
 import "./layout.css"
 import Menu from "../components/menu"
+import styled from 'styled-components';
+
+export const Container = styled.div`
+  display: flex;
+  min-height: calc(100vh - 97px);
+  @media only screen and (max-width: 480px) {
+    flex-direction: column;
+  }
+`;
+export const Content = styled.div`
+  width: 90%;
+  max-width: 1000px;
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
+  overflow-x: auto;
+  @media only screen and (max-width: 480px) {
+    width: 100%
+  }
+`
 const Layout = props => {
   return (
     <StaticQuery
@@ -27,20 +38,12 @@ const Layout = props => {
       render={data => (
         <>
           <Header siteTitle={data.site.siteMetadata.title} />
-          <div style={{ display: "flex", minHeight: "calc(100vh - 97px)" }}>
+          <Container>
             <Menu currentScreen={props.currentScreen} />
-            <div
-              style={{
-                width: "90%",
-                maxWidth: "1000px",
-                padding: `0px 1.0875rem 1.45rem`,
-                paddingTop: 0,
-                overflowX: 'auto'
-              }}
-            >
+            <Content>
               <main>{props.children}</main>
-            </div>
-          </div>
+            </Content>
+          </Container>
         </>
       )}
     />
