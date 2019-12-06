@@ -624,3 +624,17 @@ pre tt:after {
 		font-size: 100%;
 	}
 }
+
+
+.half-width-code {
+	margin-top: 40px;
+}
+
+h4 {
+	margin-bottom: 5px;
+}
+
+.codesandbox-icon {
+	margin: 0px 10px;
+	bottom: 4px;
+}

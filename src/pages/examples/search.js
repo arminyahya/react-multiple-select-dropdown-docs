@@ -5,7 +5,7 @@ import { search_md } from '../../mds';
 const Search = () => {
 	return (
 		<Example
-		title={() => <h1>Search</h1>}
+		title={() => <h2>Search</h2>}
 		code={search_md}
 			className="search"
 			description="your data can be a alot so search them whatever you want."

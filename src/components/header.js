@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import GitHubIcon from "../components/gitHubIcon"
+import CodeSandBoxIcon from "../components/CodeSandBoxIcon"
 
 const Header = ({ siteTitle }) => (
 	<header
@@ -27,10 +28,16 @@ const Header = ({ siteTitle }) => (
 				</Link>
 			</h1>
 			<div style={{ marginInlineStart: "auto" }}>
+				<a href="https://codesandbox.io/s/react-multi-select-component-1d6sd">
+					<CodeSandBoxIcon />
+				</a>
+			</div>
+			<div>
 				<a href="https://github.com/arminyahya/react-multiple-select-dropdown/">
 					<GitHubIcon />
 				</a>
 			</div>
+			
 		</div>
 	</header>
 )

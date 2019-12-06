@@ -53,11 +53,11 @@ const IntroductionPage = props => {
 				</a>{" "}
 				and
 				<a
-					href="https://github.com/contra/react-responsive"
+					href="https://github.com/emotion-js/emotion"
 					style={{ color: "#2684ff" }}
 				>
 					{" "}
-					react-responsive{" "}
+					emotion-js{" "}
 				</a>{" "}
 				library it will be transformed into a smaller component when you resize
 				or change his position when there is no space in placement.

@@ -5,7 +5,7 @@ import { responsive_md } from '../../mds';
 const Responsive = () => {
 	return (
 		<div className="example-responsive">
-			<h1>Responsive</h1>
+			<h2>Responsive</h2>
 			<div>
 				<img 
 				src={'https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/responsive.gif?raw=true'} 
