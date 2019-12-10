@@ -3,22 +3,26 @@ import Link from "gatsby-link"
 import styled from 'styled-components';
 
 export const MenuWrap = styled.div`
-	position: sticky;
-	top: 0;
 	background: #f4f4f4;
 	padding-top: 10px;
+	@media only screen and (max-width: 480px) {
+		position: sticky;
+		top: 0;
+}
 `
 export const MenuInner = styled.div`
 	display: flex;
 	justify-content: space-evenly;
 	flex-direction: column;
 	padding: 20px 10px;
-	min-width: 350px
-	
+	min-width: 220px
+	position: sticky;
+	top: 0;
 	@media only screen and (max-width: 480px) {
 			min-width: 100px;
 			flex-direction: row;
 			top: 84px;
+			box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
 	}
  
 `
