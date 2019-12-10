@@ -14,6 +14,7 @@ const Header = ({ siteTitle }) => (
 			style={{
 				display: "flex",
 				padding: `1.45rem 1.0875rem`,
+				alignItems: 'center'
 			}}
 		>
 			<h1 style={{ margin: 0, flex: 1, display: 'flex', alignItems: 'center', fontSize: '20px' }}>

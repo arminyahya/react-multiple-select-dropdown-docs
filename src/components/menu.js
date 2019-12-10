@@ -3,6 +3,8 @@ import Link from "gatsby-link"
 import styled from 'styled-components';
 
 export const MenuWrap = styled.div`
+	position: sticky;
+	top: 0;
 	background: #f4f4f4;
 	padding-top: 10px;
 `

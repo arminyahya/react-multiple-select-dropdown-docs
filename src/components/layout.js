@@ -8,6 +8,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
+  position: relative;
   min-height: calc(100vh - 97px);
   @media only screen and (max-width: 480px) {
     flex-direction: column;
