@@ -8,6 +8,7 @@ import Theming from "./theming"
 import Search from "./search"
 import Responsive from "./responsive"
 import CustomeList from "./customelist"
+import WithPopper from "./with-popper"
 
 const ExamplesPage = props => (
 	<Layout currentScreen={props["*"]}>
@@ -21,10 +22,11 @@ const ExamplesPage = props => (
 				"react multiple select dropdown",
 			]}
 		/>
-		<Theming />
-		<Search />
 		<Responsive />
+		<Theming />
 		<CustomeList />
+		<Search />
+		<WithPopper />
 	</Layout>
 )
 

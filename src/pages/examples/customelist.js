@@ -5,7 +5,7 @@ import { customeList_md } from "../../mds";
 const CustomeList = () => {
   return (
     <Example
-      title={() => <h1>CustomeList</h1>}
+      title={() => <h4>CustomeList</h4>}
       code={customeList_md}
       className="custome-list"
     />

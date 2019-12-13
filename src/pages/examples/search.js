@@ -5,10 +5,10 @@ import { search_md } from '../../mds';
 const Search = () => {
 	return (
 		<Example
-		title={() => <h2>Search</h2>}
-		code={search_md}
+			title={() => <h4>Search</h4>}
+			code={search_md}
 			className="search"
-			description="your data can be a alot so search them whatever you want."
+		// description="your data can be a alot so search them whatever you want."
 		/>
 	)
 }

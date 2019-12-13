@@ -10,6 +10,8 @@ const Todos = (props) => {
 			<ul>
 				<li style={{ textDecoration: "line-through" }}>Add Responsive</li>
 				<li style={{ textDecoration: "line-through" }}>Add Docs</li>
+				<li style={{ textDecoration: "line-through" }}>Add Virtualized</li>
+				<li style={{ textDecoration: "line-through" }}>Remove Popper</li>
 				<li >Addable Lists</li>
 				<li>Update Tests</li>
 				<li>Add More Theme</li>

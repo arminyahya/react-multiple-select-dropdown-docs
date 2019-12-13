@@ -43,24 +43,8 @@ const IntroductionPage = props => {
 				MultipleSelectDropDown is a component which you can use in your forms
 				where you need to pick more than one item. for example you want to add
 				some users to a group or pick multiple tags for your article. it is
-				responsive too, MultipleSelectDropDown use
-				<a
-					href="https://github.com/FezVrasta/react-popper"
-					style={{ color: "#2684ff" }}
-				>
-					{" "}
-					popper{" "}
-				</a>{" "}
-				and
-				<a
-					href="https://github.com/emotion-js/emotion"
-					style={{ color: "#2684ff" }}
-				>
-					{" "}
-					emotion-js{" "}
-				</a>{" "}
-				library it will be transformed into a smaller component when you resize
-				or change his position when there is no space in placement.
+				responsive too, MultipleSelectDropDown will transform into a smaller component when you resize
+				or change its position when there is no space in placement.
 			</p>
 			<pre>npm install --save react-multiple-select-dropdown</pre>
 

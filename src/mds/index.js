@@ -35,11 +35,11 @@ class YourWrapperComponent extends Component {
   }
 
   render() {
-  const { selectedItems, options } = this.state;
+  const { selectedOptions, options } = this.state;
   return (
     <div>
       <MultipleSelect
-        selectedOptions={selectedItems}
+        selectedOptions={selectedOptions}
         options={options}
         onChange={this.onChange}
       />
@@ -48,7 +48,7 @@ class YourWrapperComponent extends Component {
 `
 
 export const defaultTheme_md = `
-const DarkMultipleSelect = props => (
+const DefaultMultipleSelect = props => (
   return (
     <MultipleSelect
       selectedOptions={selectedOptions}
@@ -75,7 +75,7 @@ const ResponsiveMultipleSelect = props => (
     selectedOptions={selectedOptions}
     options={options}
     onChange={this.onChange}
-    breakPoint={768}
+    breakPoint={575}
   />)
 `
 
@@ -127,5 +127,60 @@ const MultipleSelectWithCustomeItem = props => (
     selectedOptions={selectedOptions}
     options={options}
     onChange={this.onChange}
-    renderSelectedOption={option => value === something ? <div className="special-item">{option.label}</div> : <div>{option.label}</div>}
+    renderSelectedOption={option => value === something ? <div className="special-item">{option.label}</div> :
+    <div>{option.label}</div>}
 />)`
+
+export const withPopper_md = `
+
+import * as React from "react";
+import { DesktopList, MobileList } from 'react-multiple-select-dropdown';
+import { Manager, Reference, Popper } from 'react-popper';
+
+class YourWrapperComponent extends React.Component {
+  initialOptions =
+    [
+      { value: 1, label: 'react' },
+      { value: 2, label: 'reactnative' },
+      { value: 3, label: 'nodejs' },
+      { value: 4, label: 'redux' },
+      { value: 5, label: 'mobx' }
+    ];
+  state = {
+    selectedOptions: [],
+    options: [...this.initialOptions]
+  }
+
+  onChange = (selectedOptions) => {
+    this.setState({ selectedOptions: selectedOptions });
+  }
+
+
+  render() {
+    const { selectedOptions, options } = this.state;
+    return (
+      <Manager>
+        <Reference>
+          {({ ref }) => (
+            <span type="button" ref={ref}>
+              look list is under me
+            </span>
+          )}
+        </Reference>
+        <Popper placement="bottom">
+          {({ ref, style, placement, arrowProps }) => (
+            <div ref={ref} style={style} placement={placement}>
+              <DesktopList
+                selectedOptions={selectedOptions}
+                options={options}
+                onChange={this.onChange}
+              />
+            </div>
+          )}
+        </Popper>
+      </Manager>
+    );
+  }
+}
+
+`

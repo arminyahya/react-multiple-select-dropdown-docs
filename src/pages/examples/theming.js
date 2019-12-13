@@ -7,11 +7,11 @@ const Theming = () => {
 	return (
 		<div className="theming">
 			<div className="theming-dark">
-				<h2>Theming</h2>
+				{/* <h2>Theming</h2> */}
 				<h4>Dark</h4>
 				<FlexRow>
 					<img
-						src={'https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/dark-theme.JPG?raw=true'}
+						src={'https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/dark-theme-fixed.JPG?raw=true'}
 						alt="dark multi select component"
 						title="dark multi select component"
 					/>
@@ -22,7 +22,7 @@ const Theming = () => {
 				<h4>Default</h4>
 				<FlexRow>
 					<img
-						src={'https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/default-theme.JPG?raw=true'}
+						src={'https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/default-themefixed.JPG?raw=true'}
 						alt="multi select component"
 						title="multi select component"
 					/>

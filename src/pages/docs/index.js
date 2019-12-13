@@ -12,7 +12,7 @@ const DocsPage = props => {
 	const { allContentfulComponentProps } = useStaticQuery(
 		graphql`
 			{
-				allContentfulComponentProps {
+				allContentfulComponentProps(filter: {node_locale: {eq: "en-US"}}) {
 					edges {
 						node {
 							name
@@ -42,7 +42,7 @@ const DocsPage = props => {
 					<SectionHeader>{prop.node.name}</SectionHeader>
 					<SectionInner>
 						<Type>{prop.node.type}</Type>
-						<Required>{prop.node.required}</Required>
+						<Required>{prop.node.required ? 'true' : 'false'}</Required>
 						<p>{prop.node.description}</p>
 					</SectionInner>
 				</>
