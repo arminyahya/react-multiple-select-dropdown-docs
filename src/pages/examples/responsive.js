@@ -9,7 +9,7 @@ const Responsive = () => {
 			<h4>Responsive</h4>
 			<FlexRow className="flex-row">
 				<img
-					src={'https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/responsive-smaller.gif?raw=true'}
+					src={'/images/responsive-smaller.gif'}
 					style={{}}
 					alt="react multi select"
 					title="react multi select"

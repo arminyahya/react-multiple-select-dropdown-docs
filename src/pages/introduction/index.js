@@ -23,7 +23,7 @@ const IntroductionPage = props => {
 			<FlexRow style={{ justifyContent: "center" }}>
 				<img
 					src={
-						"https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/introduction-1.JPG?raw=true"
+						"/images/introduction-1.JPG"
 					}
 					style={{ borderRadius: 10 }}
 					alt="multi select component"
@@ -31,7 +31,7 @@ const IntroductionPage = props => {
 				/>
 				<img
 					src={
-						"https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/introduction-2.JPG?raw=true"
+						"/images/introduction-2.JPG"
 					}
 					style={{ borderRadius: 10 }}
 					alt="responsive multi select component"

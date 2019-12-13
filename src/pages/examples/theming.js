@@ -22,7 +22,7 @@ const Theming = () => {
 				<h4>Default</h4>
 				<FlexRow className="flex-row">
 					<img
-						src={'/public/images/default-theme-fixed-size.jpg'}
+						src={'/images/default-theme-fixed-size.jpg'}
 						alt="multi select component"
 						title="multi select component"
 					/>
