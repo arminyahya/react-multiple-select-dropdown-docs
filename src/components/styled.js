@@ -14,3 +14,7 @@ export const SectionHeader = styled.h3`
 export const SectionInner = styled.div`
 	margin-inline-start: 40px;
 `;
+
+export const ExampleItemWrap = styled.div`
+	margin-bottom: 10px;
+`

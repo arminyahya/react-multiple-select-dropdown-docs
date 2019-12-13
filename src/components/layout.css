@@ -221,7 +221,7 @@ img {
 	padding-left: 0;
 	padding-right: 0;
 	padding-top: 0;
-	margin-bottom: 1.45rem;
+	/* margin-bottom: 1.45rem; */
 }
 h1 {
 	margin-left: 0;
@@ -403,7 +403,7 @@ pre {
 	margin-left: 0;
 	margin-right: 0;
 	margin-top: 0;
-	margin-bottom: 1.45rem;
+	/* margin-bottom: 1.45rem; */
 	font-size: 0.85rem;
 	line-height: 1.42;
 	background: hsla(0, 0%, 0%, 0.04);
@@ -411,6 +411,8 @@ pre {
 	overflow: auto;
 	word-wrap: normal;
 	padding: 1.45rem;
+	margin-top: 25px;
+	margin-bottom: 0px;
 }
 table {
 	margin-left: 0;
@@ -420,7 +422,7 @@ table {
 	padding-left: 0;
 	padding-right: 0;
 	padding-top: 0;
-	margin-bottom: 1.45rem;
+	/* margin-bottom: 1.45rem; */
 	font-size: 1rem;
 	line-height: 1.45rem;
 	border-collapse: collapse;
@@ -623,11 +625,15 @@ pre tt:after {
 	html {
 		font-size: 100%;
 	}
+	.example-wrapper {
+		width: 100%;
+	}
 }
 
 
 .half-width-code {
-	margin-top: 40px;
+	/* margin-top: 40px; */
+	
 }
 
 h4 {

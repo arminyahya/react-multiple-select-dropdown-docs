@@ -1,6 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import "../../index.sass"
@@ -11,7 +9,7 @@ import CustomeList from "./customelist"
 import WithPopper from "./with-popper"
 
 const ExamplesPage = props => (
-	<Layout currentScreen={props["*"]}>
+	<Layout currentScreen={props["*"]} className="example-page">
 	<SEO
 			title="Examples"
 			keywords={[

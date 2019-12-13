@@ -9,24 +9,24 @@ const Theming = () => {
 			<div className="theming-dark">
 				{/* <h2>Theming</h2> */}
 				<h4>Dark</h4>
-				<FlexRow>
+				<FlexRow className="flex-row">
 					<img
-						src={'https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/dark-theme-fixed.JPG?raw=true'}
+						src={'/images/dark-theme-fixed.jpg'}
 						alt="dark multi select component"
 						title="dark multi select component"
 					/>
-					<Example code={darkTheme_md} className="half-width-code"/>
+					<Example code={darkTheme_md} className="half-width-code" />
 				</FlexRow>
 			</div>
 			<div className="theming-default">
 				<h4>Default</h4>
-				<FlexRow>
+				<FlexRow className="flex-row">
 					<img
-						src={'https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/default-themefixed.JPG?raw=true'}
+						src={'public/default-theme-fixed-size.jpg'}
 						alt="multi select component"
 						title="multi select component"
 					/>
-					<Example code={defaultTheme_md} className="half-width-code"/>
+					<Example code={defaultTheme_md} className="half-width-code" />
 				</FlexRow>
 			</div>
 		</div>

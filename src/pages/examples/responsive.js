@@ -1,16 +1,16 @@
 import React from "react"
 import Example from "../../components/example"
 import { responsive_md } from '../../mds';
-import { FlexRow } from '../../components/styled';
+import { FlexRow, ExampleItemWrap } from '../../components/styled';
 
 const Responsive = () => {
 	return (
-		<div className="example-responsive">
+		<ExampleItemWrap className="responsive">
 			<h4>Responsive</h4>
-			<FlexRow style={{ alignItems: 'center' }}>
+			<FlexRow className="flex-row">
 				<img
-					src={'https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/responsive.gif?raw=true'}
-					style={{ marginBottom: 0, paddingRight: 15, width: 500, borderRadius: 10, maxWidth: 600, height: 200 }}
+					src={'https://github.com/arminyahya/react-multiple-select-dropdown-docs/blob/master/src/images/responsive-smaller.gif?raw=true'}
+					style={{}}
 					alt="react multi select"
 					title="react multi select"
 				/>
@@ -20,8 +20,7 @@ const Responsive = () => {
 					className="half-width-code"
 				/>
 			</FlexRow>
-
-		</div>
+		</ExampleItemWrap>
 
 	)
 }
