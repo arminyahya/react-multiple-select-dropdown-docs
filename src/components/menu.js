@@ -15,7 +15,7 @@ export const MenuInner = styled.div`
 	justify-content: space-evenly;
 	flex-direction: column;
 	padding: 20px 10px;
-	min-width: 220px
+	min-width: 220px;
 	position: sticky;
 	top: 0;
 	@media only screen and (max-width: 480px) {
