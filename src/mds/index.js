@@ -17,6 +17,7 @@ export const gettingStarted_md = `
 
 import React, { Component } from 'react'
 import MultipleSelect from 'react-multiple-select-dropdown';
+import 'react-multiple-select-dropdown/dist/index.css';
 
 class YourWrapperComponent extends Component {
   state = {
@@ -136,6 +137,7 @@ export const withPopper_md = `
 import * as React from "react";
 import { DesktopList, MobileList } from 'react-multiple-select-dropdown';
 import { Manager, Reference, Popper } from 'react-popper';
+import 'react-multiple-select-dropdown/dist/index.css';
 
 class YourWrapperComponent extends React.Component {
   initialOptions =
